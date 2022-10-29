@@ -1,7 +1,5 @@
-sudo apt update 
-sudo apt upgrade -y
-sudo apt install linux-image-extra-virtual -y
-sudo apt install zram-config chrony -y
+sudo apt update && sudo apt upgrade -y
+sudo apt install linux-image-extra-virtual zram-config chrony -y
 sudo curl -sS -o /etc/chrony/chrony.conf https://raw.githubusercontent.com/chadle-git/server-install/main/chrony.conf
 sudo curl -sS -o /usr/bin/init-zram-swapping https://raw.githubusercontent.com/chadle-git/server-install/main/init-zram-swapping
 sudo curl -sS -o /etc/sysctl.conf https://raw.githubusercontent.com/chadle-git/server-install/main/sysctl.conf
